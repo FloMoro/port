@@ -1,0 +1,549 @@
+:root {
+    --fond: #000b2b;
+    --element: #cf98ff;
+    --menu: #001964;
+    --text: #afc4ff;
+    --graph: #ffffff;
+    --fondcarre: #98a6ff;
+    --fondcarremail: #98c1ff;
+    --font: 'Andika New Basic', sans-serif;;
+    --font-size: 1.5em;
+}
+
+.picture{
+    width: 20em;
+    height: auto;
+}
+
+body {
+    background-color: var(--fond);
+    margin: 0;
+
+}
+
+p, h2, h1, .liendescr, .label{
+    font-family: var(--font);
+    font-size: var(--font-size);
+    color: var(--text);
+    
+}
+.liendescr{
+    text-decoration: underline;
+}
+.descr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2em 2em 0 2em;
+    
+}
+
+.uneframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.deuxframe{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.thebardlogo{
+    margin-top: 3em !important;
+}
+.alienlogo{
+    margin-left: 4em !important;
+}
+
+.dessinlogo{
+    margin-left: 2em !important;
+
+}
+
+.sphynxlogo {
+    margin-left: 4.25em !important;
+    margin-top: 4em !important;
+}
+
+.logolexi{
+    margin-left: 1.4em !important;
+
+}
+
+.prez{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.haut-prez{
+    display: flex;
+    align-items: center; 
+    height: 25em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.hr{
+    margin: 50px;
+    width: 50em;
+    align-self: center;
+}
+
+.separator{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.droite{
+    justify-content: flex-end;
+}
+
+.displaycenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.form{
+    background-color: var(--menu);
+    border: none;
+    color: var(--text);
+    font-size: 1em;
+    font-family: var(--font);
+    padding: 1em;
+    width: 80%;
+
+}
+#fs-frm-inputs{
+    border:none;
+}
+
+#submitbutton{
+    border: none;
+    background-color: var(--fond);
+    color: var(--text);
+    font-size: 1em;
+    padding: 1em;
+    
+}
+
+.form input, .form textarea{
+    background-color: var(--text);
+    color: var(--fond);
+    border: none;
+    padding: 0.5em;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding-top: 3em;
+}
+
+.menu a, .buttonbleu, .buttonrose{
+    font-size: var(--font-size);
+    color: var(--text);
+    font-family: var(--font);
+  
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.separator svg {
+    width: 80%;
+    height: auto;
+}
+
+.corps{
+    display: flex;
+    justify-content: center;
+    width: 45em;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 99em;
+}
+
+
+.buttonbleu{
+
+    background-color: var(--fondcarremail);
+    width: 12em;
+    height: 12em;
+    display: inline-block;
+
+}
+.buttonrose{
+
+    background-color: var(--fondcarre);
+    width: 12em;
+    height: 12em;
+    display: inline-block;
+}
+
+/* z index de chaque bouton : les pairs sont roses les impairs sont bleus*/
+
+.one{
+position: absolute;
+z-index: 700;
+top:0;
+left: 0;
+}
+
+.two{
+position: absolute;
+top: 9em;
+left: 9em;
+z-index: 600;
+}
+
+.three{
+position: absolute;
+top: 18em;
+right: 0;
+z-index: 500;
+}
+
+.four{
+position: absolute;
+top: 27em;
+left: 9em;
+z-index: 400;
+}
+
+.five{
+position: absolute;
+left: 0;
+top: 36em;
+z-index: 300;
+}
+
+.six{
+position: absolute;
+left: 9em;
+top: 45em;
+z-index: 200;
+}
+
+.seven{
+position: absolute;
+z-index: 100;
+top: 54em;
+right: 0;
+}
+
+.cadre{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.cadre:hover{
+    opacity: 1;
+}
+
+.infos{
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    color: var(--menu);
+    background-color: rgb(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em;
+
+}
+
+.matiere{
+    color: var(--element) !important;
+}
+
+
+
+.oneElement svg, .oneElement img {
+    max-width: 10em;
+    position: absolute;
+    max-height: 10em;
+    margin: 1em;
+
+
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--menu);
+    margin: 0;
+    padding: 0.25em;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.frame, .frame img{
+    background-color: rgba(24, 24, 24, 0.3);
+    max-width: 760px;
+    max-height: 415px;
+}
+.frameS{
+    display: flex;
+    flex-direction: row;
+}
+.frameS div{
+    margin: 1em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+.pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    margin-top: 2em;
+    background-color: var(--menu);
+}
+
+
+.icons{
+    cursor: default;
+    list-style: none;
+    color: var(--text);
+}
+
+footer a svg{
+    height: 2em;
+    width: auto;
+}
+
+
+footer a {
+
+    padding: 2em;
+}
+
+.pictures{
+
+    width: 80%;
+    height: 80%;
+}
+
+.pictbleu{
+
+    background-color: var(--fondcarremail);
+    width: 21em;
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pictviolet{
+
+    background-color: var(--fondcarre);
+    width: 21em;
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictrose{
+
+    background-color: var(--element);
+    width: 21em;
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* z index de chaque bouton : les pairs sont roses les impairs sont bleus*/
+
+.pone{
+display: flex;
+transform: rotate(15deg);
+margin-left: 55em;
+margin-top: 3em;
+}
+
+.ptwo{
+display: flex;
+transform: rotate(-20deg);
+margin-left: 35em;
+margin-top: -14em;
+}
+
+.pthree{
+display: flex;
+transform: rotate(12deg);
+margin-left: 18em;
+margin-top: -14em;
+}
+
+.pfour{
+display: flex;
+transform: rotate(103deg);
+margin-left: -1em;
+margin-top: -13em;
+}
+
+.pfive{
+display: flex;
+transform: rotate(-20deg);
+margin-left: 10em;
+margin-top: -3em;
+}
+
+.psix{
+display: flex;
+transform: rotate(2deg);
+margin-left: 45em;
+margin-top: -14em;
+}
+
+.pictures img, .pictures iframe{
+    max-width: 17em;
+    max-height: 17em;
+}
+
+.pfour img{
+    transform: rotate(-90deg);
+
+    width: auto !important;
+}
+
+.arbre{
+    margin-left: 30em !important;
+    transform: rotate(90deg) !important;
+
+}
+
+.pluspetit{
+    height: 12em !important;
+}
+
+.plusgrd {
+    height: 12em !important;
+}
+
+.missile{
+    height: 6em !important;
+}
+
+.fieldform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.infoscontact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 1em;
+
+}
+
+.mess{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    width: 100%;
+    padding: 0;
+}
+
+.mess label{
+    padding-bottom: 1em;
+}
+
+.fieldform input::placeholder, .fieldform textarea::placeholder {
+    color: var(--fond);
+    font-size: 1.5em;
+  }
+
+.oneseparator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    font-family: var(--font);
+    color: var(--text);
+}
+
+.infoscontact input{
+    padding: 1em;
+
+}
+.mail input{
+    width: 18em;
+}
+.nom input{
+    width: 18em;
+}
+.tel input{
+    width: 12em;
+}
+.finform{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1em;
+    margin-left: 1em;
+
+}
+.finform input{
+    width: 8em;
+
+}
