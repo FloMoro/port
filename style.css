@@ -332,6 +332,16 @@ h1{
     max-width: 760px;
     max-height: 415px;
 }
+.margin0{
+    margin: 0 !important;
+}
+
+.hailibuimg{
+
+    width: 30em !important;
+    height: 21em !important;
+}
+
 .frameS{
     display: flex;
     flex-direction: row;
@@ -352,6 +362,7 @@ h2{
 
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3em;
@@ -553,5 +564,10 @@ h3{
 }
 .finform input{
     width: 8em;
+
+}
+
+footer p{
+    font-size: 1em;
 
 }
