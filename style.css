@@ -18,8 +18,16 @@
 body {
     background-color: var(--fond);
     margin: 0;
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+      
 
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 p, h2, h1, .liendescr, .label{
     font-family: var(--font);
