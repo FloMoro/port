@@ -10,6 +10,14 @@
     --font-size: 1.5em;
 }
 
+html{
+    overflow-y: unset;
+}
+
+html.active{
+    overflow-y: hidden;
+}
+
 .picture{
     width: 20em;
     height: auto;
@@ -19,15 +27,8 @@ body {
     background-color: var(--fond);
     margin: 0;
     
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-      
-
 }
 
-body::-webkit-scrollbar {
-    display: none;
-  }
 
 p, h2, h1, .liendescr, .label{
     font-family: var(--font);
