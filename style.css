@@ -87,6 +87,10 @@ p, h2, h1, .liendescr, .label{
 
 }
 
+.webgl{
+    min-height: 50vh;
+}
+
 .prez{
     display: flex;
     justify-content: center;
@@ -99,7 +103,7 @@ p, h2, h1, .liendescr, .label{
 .haut-prez{
     display: flex;
     align-items: center; 
-    height: 25em;
+    max-height: 25em;
     padding-left: 6em;
     padding-right: 6em;
 }
@@ -184,7 +188,12 @@ a{
 }
 
 .separator svg {
-    width: 80%;
+    width: 80vw;
+    max-height: 80vh;
+}
+
+.oneseparator svg {
+    width: 80px;
     height: auto;
 }
 
